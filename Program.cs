@@ -43,15 +43,15 @@ namespace Assignment_2._3_1
 
                 Person newPerson = new Person();
 
-                newPerson.FirstName = entries[0];
-                newPerson.LastName = entries[1];
-                newPerson.Url = entries[2];
+               newPerson.FirstName = entries[0];
+               newPerson.LastName = entries[1];
+               //newPerson.Url = entries[2];
 
-                //variables defined for string purposes
-                //name, first
-                //name, last
-                //newPerson.Age = entries{2};
-                //newPerson.Address = entries{3};
+               //variables defined for string purposes
+               //name, first
+               //name, last
+               newPerson.Age = entries[2];
+               newPerson.Address = entries[3];
 
                 people.Add(newPerson);
             }
@@ -59,16 +59,21 @@ namespace Assignment_2._3_1
             Console.WriteLine("");
             foreach (var person in people)
             {
-                Console.WriteLine($"{ person.FirstName } { person.LastName }: { person.Url }");
+               //Console.WriteLine($"{ person.FirstName } { person.LastName }: { person.Url }");
+               Console.WriteLine($"{person.FirstName} {person.LastName} {person.Age} {person.Address}");
             }
 
-            people.Add(new Person { FirstName = "Greg", LastName = "Jones", Url = "www.test.com" });
-           
+            //people.Add(new Person { FirstName = "Greg", LastName = "Jones", Url = "www.test.com" });
+            people.Add(new Person { FirstName = "Greg", LastName = "Jones", Age = "37", Address = "424 Lochaven rd." });
+            
             List<string> output = new List<string>();
 
             foreach (var person in people) 
                 {
-                output.Add($"{ person.FirstName }, { person.LastName } ,{person.Url}");
+                
+                //output.Add($"{ person.FirstName }, { person.LastName } ,{person.Url}");
+                output.Add($"{ person.FirstName }, { person.LastName } ,{person.Age}, {person.Address}");
+              
                 }
 
             //print variables
