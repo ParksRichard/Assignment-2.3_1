@@ -10,10 +10,10 @@ namespace Assignment_2._3_1
     {
         public string FirstName { get; set; }   
         public string LastName { get; set; }
-        public string Url { get; set; }
+        //public string Url { get; set; }
 
-        //public string Address { get; set; }
-        //public string Age { get; set; }
+        public string Address { get; set; }
+        public string Age { get; set; }
 
     }
 }
